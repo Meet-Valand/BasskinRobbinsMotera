@@ -144,7 +144,7 @@ export default function BackgroundSlideshow() {
   {[
      { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
      { name: "Instagram", icon: "/instagram.svg", link: " https://www.instagram.com/baskinrobbins_motera?igsh=MWpoajkydmtybHJudQ==" },
-    { name: "WhatsApp", icon: "/whatsApp.svg", link: " https://www.instagram.com/baskinrobbins_motera?igsh=MWpoajkydmtybHJudQ==" },
+    { name: "WhatsApp", icon: "/whatsApp.svg", link: "  https://wa.me/message/4IO56AZIW656D1" },
     { name: "Swiggy", icon: "/swiggy.svg", link: "https://www.swiggy.com/menu/960231?source=sharing " },
     { name: "Zomato", icon: "/zomato.svg", link: " https://link.zomato.com/xqzv/rshare?id=8885658330563de5" },  
   ].map((item) => (
