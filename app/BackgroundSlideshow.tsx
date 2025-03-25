@@ -116,7 +116,7 @@ export default function BackgroundSlideshow() {
 
       {/* Centered Logo */}
       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="w-30 h-30 absolute top-[300px] left-1/2.3 rounded-full flex justify-center items-center">
+        <div className="w-30 h-30 size-6 absolute top-[300px] left-1/2.3 rounded-full flex justify-center items-center">
           <Image
             src="/shopLogo.png"
             alt="Logo"
@@ -125,11 +125,11 @@ export default function BackgroundSlideshow() {
             className="rounded-full"
           />
         </div>
-        <h1 className={`${sourGummy.variable} text-black size-6 absolute top-[400px] left-1/4 w-60 font-bold text-3xl`}>
+        <h1 className={`${sourGummy.variable} text-black size-8 absolute top-[400px] left-1/4 w-60 text-4xl`}>
           Anand Dessert
         </h1>
       </div>
-      <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 animate-fadeIn">
+      <div className="absolute bottom-50 left-1/2 transform -translate-x-1/2 animate-fadeIn">
   <a
     href="https://www.google.com/search?sca_esv=c2b470a1b23ad7ba&sxsrf=AHTn8zplrAmGPGFiW0JSJPe5u-j02sHBDQ:1742917098225&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzSLIHTo_72vJ3KXIf1Ga0maFKpL4uHs22vbqYK_3M4uCap7qIlJdRe_pT2T_2wbstu94QHvovnyODFdTkdUZAUF7FVS6&q=Baskin+Robbins+Reviews&sa=X&ved=2ahUKEwiHzoyUyKWMAxV678kDHdy5NXIQ0bkNegQIOhAE&biw=1280&bih=665&dpr=1.5#lrd=0x395e839b036bfaab:0xc29f39f71d15ad1f,3,,,,"
     className="px-6 py-3 text-lg font-semibold text-white rounded-full shadow-md border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-300 ease-in-out
@@ -139,12 +139,21 @@ export default function BackgroundSlideshow() {
     Rate Us !
   </a>
 </div>
+<div className="absolute bottom-36 left-1/2 transform -translate-x-1/2 animate-fadeIn">
+<a
+    href="https://wa.me/message/4IO56AZIW656D1"
+    className="px-6 py-3 text-lg font-semibold text-white rounded-full shadow-md border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-300 ease-in-out
+      hover:scale-105 hover:shadow-lg hover:bg-white/20 hover:backdrop-blur-lg 
+      animate-pulse"
+  >
+    Contact Us 
+  </a>
+</div>
       {/* Footer with Social Media Links */}
-      <footer className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex items-center space-x-6 bg-blend-color px-4 py-2 rounded-full">
+      <footer className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex items-center space-x-6 bg-blend-color px-4 py-2 rounded-full">
   {[
      { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
      { name: "Instagram", icon: "/instagram.svg", link: " https://www.instagram.com/baskinrobbins_motera?igsh=MWpoajkydmtybHJudQ==" },
-    { name: "WhatsApp", icon: "/whatsApp.svg", link: "  https://wa.me/message/4IO56AZIW656D1" },
     { name: "Swiggy", icon: "/swiggy.svg", link: "https://www.swiggy.com/menu/960231?source=sharing " },
     { name: "Zomato", icon: "/zomato.svg", link: " https://link.zomato.com/xqzv/rshare?id=8885658330563de5" },  
   ].map((item) => (
@@ -165,6 +174,7 @@ export default function BackgroundSlideshow() {
     </a>
   ))}
 </footer>
+<h6 className="bottom-2 absolute text-black right-3">* We accept bulk orders</h6>
     </div>
   );
 }
