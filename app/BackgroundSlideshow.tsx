@@ -84,9 +84,9 @@ export default function BackgroundSlideshow() {
     "/Bg3.webp",
     "/Bg4.webp",
     "/Bg5.webp",
-    "/Bg6.webp",
+   
     "/Bg7.webp",
-    "/Bg8.webp",
+    
   ];
 
   useEffect(() => {
@@ -116,7 +116,7 @@ export default function BackgroundSlideshow() {
 
       {/* Centered Logo */}
       <div className="absolute inset-0 flex justify-center items-center">
-        <div className="w-30 h-30 absolute top-1 left-1/2.3 rounded-full flex justify-center items-center">
+        <div className="w-30 h-30 absolute top-[300px] left-1/2.3 rounded-full flex justify-center items-center">
           <Image
             src="/shopLogo.png"
             alt="Logo"
@@ -125,7 +125,7 @@ export default function BackgroundSlideshow() {
             className="rounded-full"
           />
         </div>
-        <h1 className={`${sourGummy.variable} text-black size-6 absolute top-[100px] left-1/4 w-60 font-bold text-3xl`}>
+        <h1 className={`${sourGummy.variable} text-black size-6 absolute top-[400px] left-1/4 w-60 font-bold text-3xl`}>
           Anand Dessert
         </h1>
       </div>
