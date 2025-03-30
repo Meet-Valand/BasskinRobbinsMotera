@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion ,  AnimatePresence } from "framer-motion";
-import Image from "next/image";
+
 export default function Footer() {
     const [index, setIndex] = useState(0);
     const colors = [
@@ -31,18 +31,7 @@ export default function Footer() {
           style={{ backgroundColor: colors[index] }}
         />
       </AnimatePresence>
-      <footer className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
-              {[
-                 { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
-                { name: "Instagram", icon: "/instagram.svg", link: "https://www.instagram.com/baskinrobbins_motera" },
-                { name: "Swiggy", icon: "/swiggy.svg", link: "https://www.swiggy.com/menu/960231" },
-               { name: "Zomato", icon: "/zomato.svg", link: "https://link.zomato.com/xqzv/rshare?id=8885658330563de5" },
-              ].map((item, i) => (
-                <a key={i} href={item.link} target="_blank" className="flex items-center justify-center w-10 h-10">
-                  <Image src={item.icon} alt={item.name} width={30} height={30} className="hover:scale-110 transition-transform" />
-                </a>
-              ))}
-            </footer>
+ 
       
         <motion.div
           initial={{ opacity: 0, y: -20 }}
