@@ -90,21 +90,21 @@ export default function BackgroundSlideshow() {
         </a>
       </div>
       {/* Best-Selling Ice Creams - Scrollable */}
+      <p className="relative top-37 bg-white/20 p-2 px-3 rounded-lg text-black opacity-100 flex gap-3 right-28"> Our Bestsellers <Image src = "./arr.svg" alt="" height={20} width={20} /></p>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="relative z-10 mt-20 top-15 flex gap-6 px-6 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide w-full"
+        className="relative text-black z-10 mt-20 top-15 flex gap-6 px-6 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide w-full"
       >
+     
         {["Mississippi Mud", "Belgian Bliss", "Fruit Overload", "California Pistachio"].map((name, i) => (
           <div
             key={i}
             className="bg-white/20 p-4 rounded-lg min-w-[160px] text-center"
           >
             <p className="font-semibold">{name}</p>
-            <a href="https://www.swiggy.com/menu/960231" className="mt-2 block text-sm bg-pink-500 px-3 py-2 rounded-md">
-              Order Now
-            </a>
+          
           </div>
         ))}
       </motion.div>
@@ -112,7 +112,7 @@ export default function BackgroundSlideshow() {
  
       
       {/* Footer with Social Links */}
-      <footer className="absolute bottom-2 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
+      <footer className="absolute bottom-0 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
         {[
           { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
           { name: "Instagram", icon: "/instagram.svg", link: "https://www.instagram.com/baskinrobbins_motera" },
