@@ -33,48 +33,10 @@ export default function Footer() {
       </AnimatePresence>
  
       
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="bg-blend-saturation mx-2 px-8 my-3 py-3 rounded-lg flex gap-6 text-white text-sm font-semibold backdrop-blur-md"
-        >
-          {[
-            "100+ Customers Weekly",
-            "300+ Customers Monthly",
-            "100+ Online Orders Weekly",
-          ].map((text, i) => (
-            <div key={i} className="px-3 py-2 bg-white/10 rounded-md">
-              {text}
-            </div>
-          ))}
-        </motion.div>
 
         
-    <div className="relative mx-9 my-3 left-1/2 transform -translate-x-1/2 flex gap-6">
-         <a
-          href="https://g.co/kgs/bkULVz3
-"
-          className="px-6 py-3 text-lg font-semibold text-white bg-white/20 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:bg-white/30"
-        >
-          Rate Us
-        </a>
-        <a
-          href=" https://wa.me/message/4IO56AZIW656D1
-"
-          className="px-6 py-3 text-lg font-semibold text-white bg-white/20 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:bg-white/30"
-        >
-          Contact Us
-        </a>
-
-      </div>
+  
       
         </div>
     )
 }
-//1 -
-//2 -
-//3 -  
-// 4 -
-// 5 -
-//6 -

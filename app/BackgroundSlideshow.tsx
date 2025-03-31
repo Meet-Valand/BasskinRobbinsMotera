@@ -41,7 +41,7 @@ export default function BackgroundSlideshow() {
       {/* Smooth Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70"></div>
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
+      <div className=" relative top-80 inset-0 flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -59,7 +59,7 @@ export default function BackgroundSlideshow() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-white text-4xl font-bold mt-4"
+          className="text-white text-4xl font-bold "
         >
           Anand Dessert
         </motion.h1>
@@ -70,7 +70,7 @@ export default function BackgroundSlideshow() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="relative z-10 top-150 flex gap-6 px-6 py-6 overflow-x-auto scrollbar-hidden"
+        className="relative z-10 top-90 flex gap-6 px-6 py-6 overflow-x-auto scrollbar-hidden"
       >
         {["Mississippi Mud","Beligan Bliss", , "Fruit Overload", "California Pistachio", ].map((name, i) => (
           <div
@@ -84,6 +84,23 @@ export default function BackgroundSlideshow() {
           </div>
         ))}
       </motion.div>
+      
+      <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="bg-blend-saturation mx-4 relative top-90 px-8 my-3 py-3 rounded-lg flex gap-6 text-white text-sm font-semibold backdrop-blur-md"
+        >
+          {[
+            "100+ Customers Weekly",
+            "300+ Customers Monthly",
+            "100+ Online Orders Weekly",
+          ].map((text, i) => (
+            <div key={i} className="px-3 py-2 bg-white/10 rounded-md">
+              {text}
+            </div>
+          ))}
+        </motion.div>
       <footer className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
               {[
                  { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
@@ -95,7 +112,24 @@ export default function BackgroundSlideshow() {
                   <Image src={item.icon} alt={item.name} width={30} height={30} className="hover:scale-110 transition-transform" />
                 </a>
               ))}
-            </footer>
+      </footer>
+      <div className="relative mx-9 my-3 top-90 left-1/2 transform -translate-x-1/2 flex gap-6">
+         <a
+          href="https://g.co/kgs/bkULVz3
+"
+          className="px-6 py-3 text-lg font-semibold text-white bg-white/20 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:bg-white/30"
+        >
+          Rate Us
+        </a>
+        <a
+          href=" https://wa.me/message/4IO56AZIW656D1
+"
+          className="px-6 py-3 text-lg font-semibold text-white bg-white/20 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:bg-white/30"
+        >
+          Contact Us
+        </a>
+
+      </div>
 
     </div>
   );
