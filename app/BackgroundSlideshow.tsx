@@ -105,7 +105,7 @@ export default function BackgroundSlideshow() {
           </a>
         ))}
       </footer>
-      <p className="text-xl top-40 left-22 text-black relative">* We accept bulk orders</p>
+      <p className="text-xl top-49 left-22 text-black relative">* We accept bulk orders</p>
       </div>
     
   );
