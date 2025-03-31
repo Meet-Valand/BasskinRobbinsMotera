@@ -89,26 +89,7 @@ export default function BackgroundSlideshow() {
           Contact Us
         </a>
       </div>
-      {/* Best-Selling Ice Creams - Scrollable */}
-      <p className="relative top-37 bg-white/20 p-2 px-3 rounded-lg text-black opacity-100 flex gap-3 right-28"> Our Bestsellers <Image src = "./arr.svg" alt="" height={20} width={20} /></p>
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        className="relative text-black z-10 mt-20 top-15 flex gap-6 px-6 py-6 overflow-x-auto whitespace-nowrap scrollbar-hide w-full"
-      >
-     
-        {["Mississippi Mud", "Belgian Bliss", "Fruit Overload", "California Pistachio"].map((name, i) => (
-          <div
-            key={i}
-            className="bg-white/20 p-4 rounded-lg min-w-[160px] text-center"
-          >
-            <p className="font-semibold">{name}</p>
-          
-          </div>
-        ))}
-      </motion.div>
-      
+
  
       
       {/* Footer with Social Links */}
