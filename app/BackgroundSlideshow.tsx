@@ -93,7 +93,7 @@ export default function BackgroundSlideshow() {
  
       
       {/* Footer with Social Links */}
-      <footer className="absolute top-180 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
+      <footer className="absolute top-160 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
         {[
           { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
           { name: "Instagram", icon: "/instagram.svg", link: "https://www.instagram.com/baskinrobbins_motera" },
@@ -105,7 +105,7 @@ export default function BackgroundSlideshow() {
           </a>
         ))}
       </footer>
-      <p className="text-xl top-67 left-22 text-black relative">* We accept bulk orders</p>
+      <p className="text-xl top-40 left-22 text-black relative">* We accept bulk orders</p>
       </div>
     
   );
