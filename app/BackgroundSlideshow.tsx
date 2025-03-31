@@ -41,7 +41,7 @@ export default function BackgroundSlideshow() {
       {/* Smooth Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/70"></div>
 
-      <div className=" relative top-80 inset-0 flex flex-col items-center justify-center">
+      <div className=" relative top-75 inset-0 flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -70,12 +70,12 @@ export default function BackgroundSlideshow() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
-        className="relative z-10 top-90 flex gap-6 px-6 py-6 overflow-x-auto scrollbar-hidden"
+        className="relative z-10 top-78 flex gap-6 px-6 py-6 overflow-x-auto scrollbar-hidden"
       >
         {["Mississippi Mud","Beligan Bliss", , "Fruit Overload", "California Pistachio", ].map((name, i) => (
           <div
             key={i}
-            className="bg-white/20 p-4 rounded-lg min-w-[160px] text-center backdrop-blur-md"
+            className="bg-white/20 p-4 rounded-lg min-w-[160px] text-center "
           >
             <p className="font-semibold">{name}</p>
             <a href="https://www.swiggy.com/menu/960231" className="mt-2 block text-sm bg-pink-500 px-3  py-2 rounded-md">
@@ -89,7 +89,7 @@ export default function BackgroundSlideshow() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="bg-blend-saturation mx-4 relative top-90 px-8 my-3 py-3 rounded-lg flex gap-6 text-white text-sm font-semibold backdrop-blur-md"
+          className=" mx-4 relative top-75 px-8 my-3 py-3 rounded-lg flex gap-6 text-white text-sm font-semibold "
         >
           {[
             "100+ Customers Weekly",
@@ -113,7 +113,7 @@ export default function BackgroundSlideshow() {
                 </a>
               ))}
       </footer>
-      <div className="relative mx-9 my-3 top-90 left-1/2 transform -translate-x-1/2 flex gap-6">
+      <div className="relative mx-9 my-3 top-80 left-1/2 transform -translate-x-1/2 flex gap-6">
          <a
           href="https://g.co/kgs/bkULVz3
 "
