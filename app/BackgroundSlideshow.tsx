@@ -113,7 +113,7 @@ export default function BackgroundSlideshow() {
                 </a>
               ))}
       </footer>
-      <div className="relative mx-9 my-3 top-80 left-1/2 transform -translate-x-1/2 flex gap-6">
+      <div className="relative mx-9 my-3 top-76 left-1/2 transform -translate-x-1/2 flex gap-6">
          <a
           href="https://g.co/kgs/bkULVz3
 "
