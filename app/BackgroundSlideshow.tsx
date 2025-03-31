@@ -342,7 +342,7 @@ export default function BackgroundSlideshow() {
       </motion.div>
       
       {/* Footer with Social Links */}
-      <footer className="absolute bottom-10 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
+      <footer className="absolute bottom-2 flex space-x-6 bg-white/10 px-4 py-2 rounded-full">
         {[
           { name: "Google Maps", icon: "/map.svg", link: "https://maps.app.goo.gl/XJA61C2btZYZqCpm8" },
           { name: "Instagram", icon: "/instagram.svg", link: "https://www.instagram.com/baskinrobbins_motera" },
