@@ -105,6 +105,8 @@ export default function BackgroundSlideshow() {
           </a>
         ))}
       </footer>
+      <p className="text-xl top-52 left-6 text-black relative">Did you know?</p>
+      <p className="text-xl top-52 left-4 text-black relative">We are currently the best Baskin Robbins in Gujarat </p>
       <p className="text-xl top-52 left-22 text-black relative">* We accept bulk orders</p>
       </div>
     
